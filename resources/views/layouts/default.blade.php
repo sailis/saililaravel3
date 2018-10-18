@@ -3,8 +3,10 @@
 
 
 @include("includes.head")
-<body>
 
+
+<body>
+@include("includes.menu")
 
 @yield('content')
 
