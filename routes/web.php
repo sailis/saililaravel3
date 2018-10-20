@@ -17,12 +17,6 @@ Route::get('/about','PagesController@about')->name('about');
 
 Route::get('/contact','PagesController@contact')->name('contact');
 
-Route::post('/contact', function () {
+Route::post('/contact','PagesController@store')->name('contact.store');
 
-    $data=request()->all();
-
-    echo"Email: " . $data['email'] . '<br>';
-    echo"Body: " . $data['body'];
-
-});
-
+Route::get('/thanks/{name}/{last}','PagesController@thanks')->name('thanks');
