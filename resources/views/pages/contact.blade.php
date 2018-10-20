@@ -10,6 +10,9 @@
     <form action="/contact" method="post">
         @csrf
         <div class="form-group">
+            <label for="Name">Name</label>
+            <input name="name" type="name" class="form-control" id="Name" placeholder="Name">
+        <div class="form-group">
             <label for="Email">Email address</label>
             <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
         </div>
